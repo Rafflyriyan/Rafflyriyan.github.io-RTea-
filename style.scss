@@ -1,0 +1,150 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+.d-flex {
+  display: flex;
+}
+.ti-center {
+  text-align: center;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.img-responsive {
+  width: 100%;
+}
+.icon64 {
+  width: 32px;
+}
+.l-title {
+  font-size: 2em;
+}
+.ai-center {
+  align-items: center;
+}
+
+@for $i from 1 through 12 {
+  .col#{$i} {
+    width: calc(100% / (12 / $i))-3%;
+    margin: 1.5%;
+  }
+}
+
+@media screen and (max-width: 843px) {
+  @for $i from 1 through 12 {
+    .col#{$i}-md {
+      width: calc(100% / (12 / $i))-3%;
+      margin: 1.5%;
+    }
+  }
+  .md-reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  @for $i from 1 through 12 {
+    .col#{$i} {
+      width: 100%;
+      margin: 1.5%;
+    }
+  }
+}
+.jc-spacebetween {
+  justify-content: space-between;
+}
+h1,
+h2,
+h3 {
+  line-height: 120%;
+  margin: 0;
+}
+p {
+  line-height: 180%;
+}
+.bigTitle {
+  font-size: 3em;
+  letter-spacing: -2px;
+}
+.spacer5 {
+  margin: 5px 0 0;
+}
+.spacer6 {
+  margin: 6px 0 0;
+}
+.spacer10 {
+  margin: 10px 0 0;
+}
+.spacer20 {
+  margin: 20px 0 0;
+}
+.spacer40 {
+  margin: 40px 0 0;
+}
+.spacer150 {
+  margin: 150px 0 0;
+}
+.bighero {
+  background: rgb(207, 189, 143);
+  .header {
+    margin: 0 1.5%;
+    padding: 20px 0;
+    /* overflow: hidden; */
+    .logo {
+      h1 {
+        margin: 0;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+    .menu {
+      a {
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+    .contact {
+      a {
+        background: black;
+        text-decoration: none;
+        color: white;
+        border: 1px solid black;
+        padding: 10px;
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .hero {
+    .row {
+      .col6 {
+        .btn {
+          a {
+            background: black;
+            text-decoration: none;
+            color: white;
+            border: 1px solid black;
+            padding: 10px;
+            &:hover {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}
